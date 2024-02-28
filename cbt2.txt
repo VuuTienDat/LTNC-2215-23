@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+ int main(){
+ double x; cin >>x;
+ double k = x;
+ int y ;  cin >> y;
+ y = y - 1;
+ while( y--){x = x * k ;}
+
+ if (x = pow(k,y)){cout << "yes" ;}
+else {cout << "no";}
+
+ }
+

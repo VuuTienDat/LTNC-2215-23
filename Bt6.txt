@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main (){
+    int n; cin >>n;
+    for(int i = 0 ; i < n ; i++)
+    {  
+        for(int j =1+i ; j <= n+i ; j++)
+        {    
+            int k =j % n;
+            if(k==0){k=n;}
+            cout << k <<' ';
+        
+        }
+        cout << endl;
+    }
+    
+}

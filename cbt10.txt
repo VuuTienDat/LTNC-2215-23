@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin >>n;
+    double C= ((double)n-32)*5/9,
+     Kelvin = C+273.15;
+    cout << n << ' ' << fixed<< setprecision(2) << C <<' ' << Kelvin;
+    
+}

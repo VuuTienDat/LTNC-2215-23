@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ int ucln(int a, int b)
+ {
+     if(b==0){return a;}
+     return ucln(b, a%b);
+
+ }
+ void PhanSoToiGian(int a, int b){
+
+   int c= ucln(a,b);
+  a= a/c;
+  b=b/c;
+  cout <<"Phan so toi gian la : " << a <<'/'<< b<<endl;
+ }
+int main(){
+    int a, b; cin >> a >> b;
+    if(b == 0 ){cout <<"invalid"; return 0;}
+    PhanSoToiGian(a,b);
+
+}

@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+ int main (){
+ int a; cin >>a;
+ int tong = 0;
+ while (a > 0){
+    int h = a % 10;
+    tong +=h;
+
+    a=a/10;
+ }
+
+  cout << tong;
+ }

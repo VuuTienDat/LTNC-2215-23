@@ -1,0 +1,78 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool isPrime(int n)
+{
+    if( n < 2){return false;}
+    if(n == 2){return true;}
+    for(int i = 2; i <= n/2; i++){if(n%i==0) return false;}
+    return true;
+
+}
+bool soHoanHao(int n)
+   { int tong=0;
+  for(int i =2; i <=n/2; i++ )
+   {
+       if(n % i==0){tong +=i;}
+}
+if(tong+1 == n){return true;}
+ return false;
+}
+
+bool soChinhPhuong(int n){
+ int c= sqrt(n);
+if(n==c*c){return true;}
+return false;
+}
+int main()
+{
+    int a;
+      cin >>a;
+for(int i=2;i<=a;i++){
+if(isPrime(i)){cout << i <<' ';}
+}
+cout << endl;
+for(int i=2;i<=a;i++){
+if(soHoanHao(i)){cout << i <<' ';}
+}
+cout << endl;
+for(int i=2;i<=a;i++){
+if(soChinhPhuong(i)){cout << i <<' ';}
+}
+cout << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

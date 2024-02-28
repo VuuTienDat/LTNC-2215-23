@@ -1,0 +1,4 @@
+1. sai ở lỗi while(n < 20); sửa thành while( n < 20){}
+2. sai dấu sửa dấu ',' thành ';'trong for
+3.thiếu dấu {} trong vòng lặp do - while
+4.sai ở bước nhảy i-- sang i++

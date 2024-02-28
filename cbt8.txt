@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+ struct Ptbac2{
+ double a,b,c;
+ Ptbac2(int _a ,int _b, int _c): a(_a),b(_b),c(_c) {}
+ void Solve(){
+ if(a !=0 ){
+  double delta = pow(b,2)-4 * a * c;
+  if(delta > 0){
+    cout << "phuong trinh co 2 nghiem phan biet la "<< endl;
+    cout << (-b-sqrt(delta))/(2*a)<<' '<< (-b+sqrt(delta))/(2*a);
+
+
+  }
+  else if( delta ==0){
+
+    cout << "phuong trinh co nghiem kep la :" << endl;
+    cout << -b /(2 * a);
+  }
+ else {
+    cout << "phuong trinh co 2 nghiem phuc la"<< endl
+     << -b/(2 *a) <<" + "<< -sqrt(-delta)/(2 *a) <<'i'<<" va "
+     << -b/(2 *a) <<" + "<< +sqrt(-delta)/(2 *a) <<'i';
+
+ }}
+
+ if(a ==0 ){
+    if(b ==0 ){
+        if(c  != 0){cout << "phuong trinh vo nghiem";}
+        else {cout << "phuong trinh vo so nghiem";}
+    }
+    else { cout << "phuong trinh co nghiem duy nhat  " << endl;
+      cout <<  (b)/c;
+    }
+
+
+ }
+ }
+
+
+
+ };
+
+ int main (){
+  double a,b,c;
+  cin >> a >> b >>c ;
+  Ptbac2 solve(a,b,c);
+  solve.Solve();
+
+ }

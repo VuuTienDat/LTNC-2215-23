@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+  int n ; cin >>n;
+
+  long long Min = LLONG_MAX, min = LLONG_MAX;
+  while(n --){
+    long long a,b;
+    cin >> a >> b;
+    if(a < Min){Min = a;}
+    if(b < min){min = b;}
+
+  }
+ long long tich =Min * min;
+ cout << tich;
+
+}

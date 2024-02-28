@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+ int n =5;
+ double tb = 0;
+ while ( n --){
+ double a; cin >>a;
+ tb += a/5;
+
+ }
+ cout << tb;
+
+
+}

@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double Min,Max,step;
+    cin >> Min >>Max >>step;
+    for(double i = Min; i<= Max; i+=step)
+    {
+        double doC=(i-32)*5/9,Kelvin = doC +273.15;
+        cout << fixed << setprecision(2)<< i << ' '<<doC << ' ' << Kelvin <<endl;
+    }
+    
+}

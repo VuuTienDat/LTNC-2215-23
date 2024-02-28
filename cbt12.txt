@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool soChinhPhuong(int n){
+ int c= sqrt(n);
+if(n==c*c){return true;}
+return false;
+}
+int main()
+{
+    int a;
+    cin >>a;
+    if(a < 0){cout << "vui long nhap so nguyen duong"; return 0;}
+    if(soChinhPhuong(a)){cout << a <<" la so chinh phuong";}
+    else {cout <<a<< " khong la so chinh phuong";}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

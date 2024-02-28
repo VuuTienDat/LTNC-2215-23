@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n; cin >>n;
+    double Max = -DBL_MAX, Min= DBL_MAX;
+
+    while (n--)
+    {
+        double a; cin >> a;
+
+        if(a > Max){Max = a;}
+        if(a < Min){Min = a;}
+    }
+    cout << Max << endl << Min;
+
+}

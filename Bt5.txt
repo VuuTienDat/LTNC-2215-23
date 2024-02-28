@@ -1,0 +1,56 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+string NumberToEnglish(int n){
+ string result ="";
+ if( n==0 ){return "zero";}
+ if( n < 0){
+    result += "negative ";
+    n = -n;
+ }
+if(n > 1000000){
+    result += NumberToEnglish(n / 1000000) + "million ";
+    n = n % 1000000;
+}
+if( n > 1000){
+    result += NumberToEnglish( n / 1000) + "thousand ";
+    n = n % 1000;
+}
+if ( n > 100){
+    result += NumberToEnglish(n / 100) + "hundred ";
+    n = n % 100;
+
+}
+if(n >= 20){
+    string tens[]={"","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"};
+    result += tens[n/10]+' ';
+    n = n/ 10;
+
+}
+if(n > 10){
+    string ev[]={"eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","ninteen"};
+    result += ev[n % 10] +' ';
+
+}
+if( n <= 10){
+    string ones[]={"","one","two","three","four","five","six","seven","eight","nine","ten"};
+    result += ones[n] +' ';
+
+}
+return result;
+}
+ int main(){
+int n ; cin >>n;
+cout << NumberToEnglish(n);
+
+
+
+
+
+
+
+
+
+
+ return 0;
+ }

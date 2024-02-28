@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+ struct Ptbac1{
+  double a,b,c,a1,b1,c1;
+  Ptbac1 (double  _a, double _b, double _c, double _a1, double _b1, double _c1)
+  {
+    a=_a;
+    b=_b;
+    c=_c;
+    a1=_a1;
+    b1=_b1;
+    c1=_c1;
+  }
+  void nghiemPT(){
+  if((a*b1-a1*b) != 0){
+    double  x1 =-(b*c1 - b1*c)/(a*b1 - a1*b);
+    double y1 = (a*c1-a1*c)/(a*b1 - a1*b);
+    cout << "He phuong trinh co nghiem duy nhat la:" << endl;
+    cout << x1 << ' ' << y1;
+  }
+  else{
+   if( a != 0 && b != 0 && c!=0 && a1 != 0 && b1 != 0 && c1 !=0)
+   {
+       if(a1/a == b1/b && b1/b == c1/c){cout << "he vo so nghiem";}
+       else{ cout << "he vo nghiem";}
+   }
+
+   else if((a1 ==0 && b1 ==0 && c1 ==0)||(a == 0 && b ==0 && c == 0))
+   {
+       cout << "he vo so nghiem";
+   }
+   else {cout << "he vo nghiem";}
+
+  }
+
+
+
+  }
+
+
+
+ };
+
+ int main (){
+  double a,b,c,a1,b1,c1;
+  cin >> a >> b >>c >> a1 >> b1 >> c1;
+  Ptbac1 solve(a,b,c,a1,b1,c1);
+  solve.nghiemPT();
+
+ }
