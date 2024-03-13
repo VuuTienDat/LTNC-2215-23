@@ -1,0 +1,4 @@
+int a = 27 * "three";
+//trình biên dịch báo lỗi
+double x; cout << x // trình biên dịch cho ra kết quả 1 số bất kì
+khi cho double x ra khỏi hàm khởi tạo , trình biên dịch cho ra kết quả là 0

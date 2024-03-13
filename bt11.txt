@@ -1,0 +1,2 @@
+double C = (F - 32) * (5 / 9);
+// sai vì (5/9) sẽ ra 0 vì ở trình biên dịch hiểu là phép chia số nguyên

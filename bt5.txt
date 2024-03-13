@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+void divideByZero(int &x){
+ x=x / 0;
+
+}
+ int main(){
+  int x ; cin >>x;
+
+  divideByZero(x);
+ cout << x;
+
+
+
+
+
+ }
+// chương trình không in ra kết quả 

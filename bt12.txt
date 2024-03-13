@@ -1,0 +1,9 @@
+if (10 > 5);
+    else;
+{
+    cout << "Here";
+};
+Trong đoạn mã trên:
+
+Dòng if (10 > 5); là một câu lệnh điều kiện (if) rỗng, vì nó được kết thúc bằng dấu chấm phẩy. Điều này có nghĩa là không có gì được thực thi trong trường hợp điều kiện đúng và dòng lệnh else; cũng là một câu lệnh rỗng. Điều này là không hợp lý vì không có điều kiện được xác định cho phần else.
+Dấu ngoặc nhọn {} sau else; là một khối mã độc lập, và dòng cout << "Here"; sẽ được thực thi mỗi khi điều kiện của if là sai. Điều này không được điều khiển bởi câu lệnh if hoặc else.
